@@ -1,0 +1,541 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MUHSIN KALODI</title>
+    <link rel="icon"
+        href="https://instagram.fcok1-1.fna.fbcdn.net/v/t51.2885-19/s150x150/72156155_503018130291315_644175992671174656_n.jpg?_nc_ht=instagram.fcok1-1.fna.fbcdn.net&_nc_ohc=fg53DoJAOBoAX8Vn0FS&oh=90835b6a75ab27d1e09e82d1ff322eb4&oe=5F7EA77A"
+        type="image/gif" sizes="16x16">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <style>
+        .button {
+            border-radius: 4px;
+            background-color: 4511e;
+            border: none;
+            color: black;
+            text-align: center;
+            font-size: 15px;
+            padding: 20px;
+            width: 200px;
+            transition: all 0.5s;
+            cursor: pointer;
+            margin: 5px;
+        }
+
+        .button span {
+            cursor: pointer;
+            display: inline-block;
+            position: relative;
+            transition: 0.5s;
+        }
+
+        .button span:after {
+            content: '\00bb';
+            position: absolute;
+            opacity: 0;
+            top: 0;
+            right: -20px;
+            transition: 0.5s;
+        }
+
+        .button:hover span {
+            padding-right: 25px;
+        }
+
+        .button:hover span:after {
+            opacity: 1;
+            right: 0;
+        }
+        /* Style inputs with type="text", select elements and textareas */
+input[type=text], select, textarea {
+  width: 100%; /* Full width */
+  padding: 12px; /* Some padding */ 
+  border: 1px solid #ccc; /* Gray border */
+  border-radius: 4px; /* Rounded borders */
+  box-sizing: border-box; /* Make sure that padding and width stays in place */
+  margin-top: 6px; /* Add a top margin */
+  margin-bottom: 16px; /* Bottom margin */
+  resize: vertical /*Allow the user to vertically resize the textarea (not horizontally)*/
+}
+
+/* Style the submit button with a specific background color etc */
+input[type=submit] {
+  background-color: #4CAF50;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+/* When moving the mouse over the submit button, add a darker green color */
+input[type=submit]:hover {
+  background-color: #45a049;
+}
+
+/* Add a background color and some padding around the form */
+.container {
+  border-radius: 5px;
+  
+  padding: 20px;
+}
+.footer-header{
+    position: relative;
+    display: inline-block;
+    vertical-align: top
+}
+/* Style all font awesome icons */
+.fa {
+  padding: 20px;
+  font-size: 30px;
+  width: 50px;
+  text-align: center;
+  text-decoration: none;
+}
+
+/* Add a hover effect if you want */
+.fa:hover {
+  opacity: 0.7;
+}
+
+/* Set a specific color for each brand */
+
+/* Facebook */
+.fa-facebook {
+  background: #3B5998;
+  color: white;
+}
+
+/* Twitter */
+.fa-twitter {
+  background: #55ACEE;
+  color: white;
+}
+.fa-instagram {
+  background: #125688;
+  color: white;
+}
+.fa-linkedin {
+  background: #007bb5;
+  color: white;
+}
+.button5 {
+    border-radius: 40px
+    
+
+}
+.button5[type=submit]:checked{
+    background-color: green;
+}
+
+    </style>
+</head>
+
+<body>
+    <header class="bg-info" id="home" style="position: fixed; width: 100%; z-index: 1;">
+        <!-- <canvas><img src="AnimatedHeaderBackgrounds.zip" alt=""></canvas> -->
+        <div class="row text-white ">
+           
+          
+               
+            
+            <div class="col-md-6 col-9 p-3 pl-5 ">
+                <h2>MUHSIN KALODI</h2>
+            </div>
+            <div class="col-md-6 col-3 my-auto">
+                <nav class="navbar navbar-expand-lg navbar-light text-white">
+
+                    <button class="navbar-toggler ml-auto" type="button" data-toggle="collapse"
+                        data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                        aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="navbar-nav ml-auto">
+                            <li class="nav-item active">
+                                <a class="nav-link text-white" href="#about">Home <span class="sr-only">(current)</span></a>
+                            </li>
+                            <li class="nav-item">
+                                <i><a class="nav-link text-white" href="#about">About me</a></i>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link text-white" href="#service">Service</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link text-white" href="#education">Education</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link text-white" href="#contect">Contact me</a>
+                            </li>
+                        </ul>
+                    </div>
+                </nav>
+
+            </div>
+        </div>
+    </header>
+    <section  id="about" style="padding-top: 80px;">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-md-6">
+                    <img src="6295b19a-b7fd-4738-94cb-a06b63cfabd3.jpg" alt="image not available  "
+                        class="rounded img-fluid">
+
+                </div>
+                <div class="col-md-6 mt-4">
+                    <h6 ">Hi, am <i> MUHSIN KALODI </i> working based on programming at Kerala,malappuram,kottakkal</h5>
+                        <P>" when you don't create things, you become defined by your tastes rather than ability"</P>
+                        <footer>-KALODI</footer>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- <section class="bg-primary p-4  col-12 col-md-4">
+        <div class="containe bg-info">
+            <h1 class="text-center ">Service</h1>
+
+            <div class="row">
+                <div class="p-4">
+                    <div class="col-md-4">
+                        <div class="card text-center p-4" style="width: 18rem;">
+                            <i class="fas fa-file-code display-1 text-info"></i>
+                            <div class="card-body">
+                                <h5 class="card-title">HTML</h5>
+                                <p class="card-text">Some quick example text to build on the card title and make up the
+                                    bulk of the card's content.</p>
+                                <a href="#" class="btn btn-primary">Go somewhere</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+
+
+                        <div class="card text-center p-4" style="width: 18rem;">
+                            <i class="fas fa-file-code display-1 text-info"></i>
+                            <div class="card-body">
+                                <h5 class="card-title">HTMLI can Disign website useing HTML</h5>
+                                <p class="card-text">Some quick example text to build on the card title and make up the
+                                    bulk of the card's content.</p>
+                                <a href="#" class="btn btn-primary">Go somewhere</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-4">
+                        <div class="card text-center p-4" style="width: 18rem;">
+                            <i class="fas fa-file-code display-1 text-info"></i>
+                            <div class="card-body">
+                                <h5 class="card-title">HTMLI can Disign website useing HTML</h5>
+                                <p class="card-text">Some quick example text to build on the card title and make up the
+                                    bulk of the card's content.</p>
+                                <a href="#" class="btn btn-primary">Go somewhere</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-4">
+                        <div class="card text-center p-4" style="width: 18rem;">
+                            <i class="fas fa-file-code display-1 text-info"></i>
+                            <div class="card-body">
+                                <h5 class="card-title">HTMLI can Disign website useing HTML</h5>
+                                <p class="card-text">Some quick example text to build on the card title and make up the
+                                    bulk of the card's content.</p>
+                                <a href="#" class="btn btn-primary">Go somewhere</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-4">
+                        <div class="card text-center p-4" style="width: 18rem;">
+                            <i class="fas fa-file-code display-1 text-info"></i>
+                            <div class="card-body">
+                                <h5 class="card-title">HTMLI can Disign website useing HTML</h5>
+                                <p class="card-text">Some quick example text to build on the card title and make up the
+                                    bulk of the card's content.</p>
+                                <a href="#" class="btn btn-primary">Go somewhere</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-4">
+
+                        <div class="card text-center p-4" style="width: 18rem;">
+                            <i class="fas fa-file-code display-1 text-info"></i>
+                            <div class="card-body">
+                                <h5 class="card-title">HTMLI can Disign website useing HTML</h5>
+                                <p class="card-text">Some quick example text to build on the card title and make up the
+                                    bulk of the card's content.</p>
+                                <a href="#" class="btn btn-primary">Go somewhere</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+
+            </div>
+        </div>
+    </section> -->
+    <section class="pt-5 bg-light " id="service">
+        <div class="container bg-info">
+            <h1 class="text-center text-white">Service</h1>
+            <div class="row pb-4 ">
+
+                <div class="col-md-4 mt-4">
+                    <div class="card text-center p-4 mt-3px">
+                        <i class="fas fa-file-code display-1 text-dark"></i>
+                        <div class="card-body">
+                            <h5 class="card-title">HTML </h5>
+                            <p class="card-text">I can Disign website useing HTML,i will try my level beast</p>
+                            <a href="#" class="btn text-dark button"><span>READ MORE</span></a>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="col-md-4 mt-4">
+                    <div class="card text-center p-4 mt-3px">
+                        <i class="fas fa-hashtag display-1 text-dark"></i>
+                        <div class="card-body">
+                            <h5 class="card-title">CSS</h5>
+                            <p class="card-text">I can Disign website useing CSS,i will try my level beast</p>
+                            <a href="#" class="btn text-dark button"><span>READ MORE</span></a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-4 mt-4">
+                    <div class="card text-center p-4 mt-3px">
+                        <i class="fab fa-js-square display-1 text-dark"></i>
+                        <div class="card-body">
+                            <h5 class="card-title">JAVASCRIPT</h5>
+                            <p class="card-text">I can Disign website useing JAVASCRIPT,i will try my level beast</p>
+                            <a href="#" class="btn text-dark button"><span>READ MORE</span></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row pb-4 ">
+
+                <div class="col-md-4 mt-4">
+                    <div class="card text-center p-4 ">
+                        <i class="fas fa-dollar-sign display-1 text-dark"></i>
+                        <div class="card-body">
+                            <h5 class="card-title">JQUERY</h5>
+                            <p class="card-text">I can Disign website useing JQUERY,i will try my level beast</p>
+                            <a href="#" class="btn text-dark button"><span>READ MORE</span></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 mt-4">
+                    <div class="card text-center p-4 mt-3px">
+                        <i class="fab fa-bootstrap display-1 text-dark"></i>
+                        <div class="card-body">
+                            <h5 class="card-title">BOOTSTRAP</h5>
+                            <p class="card-text">I can Disign website useing BOOTSTRAP,i will try my level beast</p>
+                            <a href="#" class="btn text-dark button"><span>READ MORE</span></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 mt-4 ">
+                    <div class="card text-center p-4 mrt-3px">
+                        <i class="fab fa-github display-1 text-dark icon them-bg ti-layout"></i>
+                        <div class="card-body">
+                            <h5 class="card-title">GIT</h5>
+                            <p class="card-text">I can Disign website useing GITHUB,i will try my level beast</p>
+                            <a href="C:\Users\Hp\Desktop\Glxy/glxy.html" class="btn text-dark button"><span>READ
+                                    MORE</span></a>
+
+
+
+
+                        </div>
+                    </div>
+                </div>
+
+
+
+
+
+            </div>
+
+
+
+
+        </div>
+
+    </section>
+    <!-- <section style="margin-top: 30px;">
+
+        <div class="container pt-20px bg-warning x">
+            <h3 class="text-center pt-10px">Education</h3>
+
+            <div class="row" style="padding-left: 5px; ">
+                <div class="ml-10px pl-5px col-md-4" >
+                <div style="height: 400px; width: 350px; background: rgb(251, 251, 255); margin-top: 45px; 
+-webkit-box-shadow: 3px 3px 5px 6px rgb(8, 8, 6);
+box-shadow:         3px 3px 5px 6px rgb(8, 8, 6); margin-left: 50px;" class="col-md-5">
+<img src="http://pkmmhss.in/uploadpics/Banner_1478867408.jpg"   alt=""> -->
+
+
+<!-- 
+    </div>
+
+    </section> -->
+    <section  style="margin-top: 50px;" id="education">
+        <div class="container bg-warning">
+            <h1 class="text-center text-white">Education</h1>
+            <div class=" row">
+
+                <div class="col-md-4 mt-4">
+                    <div class="card mt-3px" style="-webkit-box-shadow: 3px 3px 5px 6px black;
+                    box-shadow:         3px 3px 5px 6px black;">
+                        <img src="2019-08-28.jpg" alt="" style="height: 200px;">
+                        <div class="card-body  text-center">
+                            <h5 class="card-title">P.M.S.A.P.T.M.L.P CHANGUVETTY</h5>
+                            <p class="card-text">I studied in this school from 1st stanterd to 4th stanterd <br> most memmoreble school</p>
+                            <!-- <a href="#" class="btn text-dark button"><span>READ MORE</span></a> -->
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 mt-4">
+                    <div class="card mt-3px" style="-webkit-box-shadow: 3px 3px 5px 6px black;
+                    box-shadow:         3px 3px 5px 6px black;" >
+                        <img src="https://schoolwiki.in/images/thumb/3/31/19883.01.jpg/320px-19883.01.jpg" alt="" style="height: 200px;">
+                        <div class="card-body text-center">
+                            <h5 class="card-title">A.U.P.S PARAPPUR</h5>
+                            <p class="card-text">I studied in this school from 5th stanterd to 7th stanterd <br> most memmoreble school</p>
+                            <!-- <a href="#" class="btn text-dark button"><span>READ MORE</span></a> -->
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 mt-4" >
+                    <div class="card  mt-3px" style="-webkit-box-shadow: 3px 3px 5px 6px black;
+                    box-shadow:         3px 3px 5px 6px black;">
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/2/23/PKMMHSS_Edarikode.jpg" alt="" style="height: 200px;" >
+                        <div class="card-body text-center">
+                            <h5 class="card-title">PKMM HSS EDARIKODE</h5>
+                            <p class="card-text">I studied in this school from 8th stanterd to 10th stanterd <br> most memmoreble schoolt</p>
+                            <!-- <a href="#" class="btn text-dark button"><span>READ MORE</span></a> -->
+                        </div>
+                    </div>
+                </div>
+            
+
+
+            
+        </div>
+        </div>
+    </section>
+    <section class="bg-light" style="margin-top: 30px;" id="contect">
+        <div class="container rounded">
+            <h1 class="text-center ">Contact me</h1>
+            <div class="row no-gutters rounded " style="-webkit-box-shadow: 3px 3px 5px 6px gray;
+            box-shadow:         3px 3px 5px 6px gray; ">
+            
+                <div class="col-md-6 bg-white" style="padding-top:120px;">
+                    <div><h5>Contect us</h5></div>
+                    
+                    <div style="margin-left: 7px;">
+
+                    <i class="fas fa-envelope mt-5 text-center"> muhsinkalodi9311@gmil.com</i>
+                        <!-- <p class="pl-4">
+                            muhsinkalodi9311@gmail.com
+                        </p> -->
+                   
+                    
+                </div>
+                    
+            </div>
+                <div class="col-md-6 bg-white pt-2 pl-2 pr-3 ">
+            <form action="action_page.php">
+          
+              <label for="fname">Name</label>
+              <input type="text" id="fname" name="firstname" placeholder="Your name..">
+          
+              <label for="lname">place</label>
+              <input type="text" id="lname" name="lastname" placeholder="place">
+          
+              <label for="country">Email</label>
+              <input type="email" id="lname" name="lastname" placeholder="Email">
+          <br>
+              <label for="subject">messege</label>
+              <textarea id="subject" name="subject" placeholder="Write something.."></textarea>
+         
+          
+            </form>
+        </div>
+        <div class="text-center" style="width: 100%;">
+            <!-- <input type="submit" value="Submit" style="width: 100%;"> -->
+            <button class="button button5 bg-info" type="submit"><b>submit</b></button>
+          </div>
+        </div>
+    </div>
+    </section>
+    <footer>
+    
+        <div style="width: 100%; height: 400px; background: black;">
+            <div class="container text-center ";">
+            <div class="footer-header text-white pt-4px text-center" style="padding-top: 80px;">
+         <span><h3>Muhsin Kalodi</h3></span>
+         <span></span>
+            
+            </div>
+            <div class="social-media">
+                <!-- Add icon library -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+
+<!-- Add font awesome icons -->
+<!-- <a href="#" class="fa fa-facebook"></a>
+<a href="#" class="fa fa-twitter pl-3px"></a>
+<a href="#" class="fa fa-linkedin"></a>
+<a href="#" class="fa fa-instagram"></a> -->
+
+
+<a href="https://www.facebook.com/profile.php?id=100022700314642"><i class="fab fa-facebook-f" style="color: grey;"></i></a>
+<a href="https://www.instagram.com/_mu_h_sin__kalodi__/"><i class="fab fa-instagram-square pl-4" style="color: grey;"></i></a>
+<a href="https://twitter.com/muhsin_kalodi"><i class="fab fa-twitter-square pl-4" style="color: grey;"></i></a>
+<a href="https://www.linkedin.com/in/muhsin-kalodi-8872531b5/"><i class="fab fa-linkedin-in pl-4" style="color: grey;"></i></a>
+
+            </div>
+            <div class="copyright">
+                <i class="far fa-copyright"></i>
+
+                <p>2020 kalodi.All copyrights reserved</p>
+            </div>
+        </div>
+        </div>
+        </div>
+    
+    </footer>
+
+
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/4c52434f8c.js" crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/4c52434f8c.js" crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/4c52434f8c.js" crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/4c52434f8c.js" crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/4c52434f8c.js" crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/4c52434f8c.js" crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/4c52434f8c.js" crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/4c52434f8c.js" crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/4c52434f8c.js" crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/4c52434f8c.js" crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/4c52434f8c.js" crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/4c52434f8c.js" crossorigin="anonymous"></script>
+</body>
+
+</html>
