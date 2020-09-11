@@ -10,6 +10,8 @@
         type="image/gif" sizes="16x16">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
         integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        
     <style>
         .button {
             border-radius: 4px;
@@ -132,6 +134,7 @@ input[type=submit]:hover {
 }
 
     </style>
+    
 </head>
 
 <body>
@@ -452,34 +455,35 @@ box-shadow:         3px 3px 5px 6px rgb(8, 8, 6); margin-left: 50px;" class="col
                     
             </div>
                 <div class="col-md-6 bg-white pt-2 pl-2 pr-3 ">
-            <form action="action_page.php">
+            <form  id="submit-form" action="">
           
               <label for="fname">Name</label>
               <input type="text" id="fname" name="firstname" placeholder="Your name..">
           
               <label for="lname">place</label>
-              <input type="text" id="lname" name="lastname" placeholder="place">
+              <input type="text" id="lname" name="place" placeholder="place">
           
               <label for="country">Email</label>
-              <input type="email" id="lname" name="lastname" placeholder="Email">
+              <input type="email" id="lname" name="Email" placeholder="Email">
           <br>
-              <label for="subject">messege</label>
+              <label for="subject">message</label>
               <textarea id="subject" name="subject" placeholder="Write something.."></textarea>
          
-          
+              <button class="button button5 bg-info" type="submit"><b>submit</b></button>
             </form>
         </div>
-        <div class="text-center" style="width: 100%;">
+        <!-- <div class="text-center" style="width: 100%;"> -->
             <!-- <input type="submit" value="Submit" style="width: 100%;"> -->
-            <button class="button button5 bg-info" type="submit"><b>submit</b></button>
-          </div>
+           
+          <!-- </div> -->
         </div>
     </div>
     </section>
+   
     <footer>
     
         <div style="width: 100%; height: 400px; background: black;">
-            <div class="container text-center ";">
+            <div class="container text-center ";>
             <div class="footer-header text-white pt-4px text-center" style="padding-top: 80px;">
          <span><h3>Muhsin Kalodi</h3></span>
          <span></span>
@@ -514,6 +518,29 @@ box-shadow:         3px 3px 5px 6px rgb(8, 8, 6); margin-left: 50px;" class="col
     
     </footer>
 
+    <!-- <script>
+    $("#submit-form").submit((e)=>{
+        e.preventDefault()
+        $.ajax({
+            url:"https://script.google.com/macros/s/AKfycbyLoWzsprBJXIRQUcmXMZ3Rzdp5xpgxG_eDidFP6A/exec",
+            data:$("#submit-form").serialize(),
+            method:"post",
+            success:function (response){
+                alert("Form submitted successfully")
+                window.location.reload()
+                //window.location.href="https://google.com"
+            },
+            error:function (err){
+                alert("Something Error")
+
+            }
+        })
+    })
+</script> -->
+
+ <!-- <script src="https://code.jquery.com/jquery-3.1.1.slim.min.js"></script> -->
+
+ <!-- <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script> -->
 
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
         integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
@@ -536,6 +563,37 @@ box-shadow:         3px 3px 5px 6px rgb(8, 8, 6); margin-left: 50px;" class="col
     <script src="https://kit.fontawesome.com/4c52434f8c.js" crossorigin="anonymous"></script>
     <script src="https://kit.fontawesome.com/4c52434f8c.js" crossorigin="anonymous"></script>
     <script src="https://kit.fontawesome.com/4c52434f8c.js" crossorigin="anonymous"></script>
+   
+    <script>
+        $("#submit-form").submit((e)=>{
+            e.preventDefault()
+            $.ajax({
+                url:"https://script.google.com/macros/s/AKfycbyLoWzsprBJXIRQUcmXMZ3Rzdp5xpgxG_eDidFP6A/exec",
+                data:$("#submit-form").serialize(),
+                method:"post",
+                success:function (response){
+                    alert("Form submitted successfully")
+                    window.location.reload()
+                    //window.location.href="https://google.com"
+                },
+                error:function (err){
+                    alert("Something Error")
+    
+                }
+            })
+        })
+    </script>
+
+<!-- <script
+src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+integrity="sha256-pasqAKBDmFT4eHoN2ndd6lN370kFiGUFyTiUHWhU7k8="
+crossorigin="anonymous"></script> -->
+
+
+<script
+  src="https://code.jquery.com/jquery-3.4.1.min.js"
+  integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+  crossorigin="anonymous"></script>
 </body>
 
 </html>
