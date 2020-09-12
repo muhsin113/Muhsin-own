@@ -11,7 +11,15 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
         integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-        
+
+        <!-- <script type="text/javascript" src="js/jquery-1.10.2.js"></script>
+<script type="text/javascript" src="js/jquery.form.js"></script> -->
+<!-- <script src="http://jquery.bassistance.de/validate/additional-methods.js"></script> -->
+
+
+<script src="http://ajax.aspnetcdn.com/ajax/jquery.validate/1.11.1/jquery.validate.min.js"></script>
+
+</head>
     <style>
         .button {
             border-radius: 4px;
@@ -160,7 +168,7 @@ input[type=submit]:hover {
                     <div class="collapse navbar-collapse" id="navbarSupportedContent">
                         <ul class="navbar-nav ml-auto">
                             <li class="nav-item active">
-                                <a class="nav-link text-white" href="#about">Home <span class="sr-only">(current)</span></a>
+                                <a class="nav-link text-white" href="#">Home <span class="sr-only">(current)</span></a>
                             </li>
                             <li class="nav-item">
                                 <i><a class="nav-link text-white" href="#about">About me</a></i>
@@ -455,19 +463,21 @@ box-shadow:         3px 3px 5px 6px rgb(8, 8, 6); margin-left: 50px;" class="col
                     
             </div>
                 <div class="col-md-6 bg-white pt-2 pl-2 pr-3 ">
-            <form  id="submit-form" action="">
+            <form  id="submit-form" class="submit-form" action="/action_page.php" name="Myform" onsubmit="return validateForm()" method="post">
           
               <label for="fname">Name</label>
-              <input type="text" id="fname" name="firstname" placeholder="Your name..">
+              <input type="text" id="fname" name="name" placeholder="Your name.."  value="" id="validationCustom01"
+              required>
+              
           
-              <label for="lname">place</label>
-              <input type="text" id="lname" name="place" placeholder="place">
+              <label for="lname" for="validationCustom02">place</label>
+              <input type="text" id="lname" name="place" placeholder="place"  id="validationCustom02" required>
           
               <label for="country">Email</label>
-              <input type="email" id="lname" name="Email" placeholder="Email">
+              <input type="email" id="lname" name="Email" placeholder="Email" id="validationCustom03" required>
           <br>
               <label for="subject">message</label>
-              <textarea id="subject" name="subject" placeholder="Write something.."></textarea>
+              <textarea id="subject" name="subject" placeholder="Write something.." id="validationCustom04" required></textarea>
          
               <button class="button button5 bg-info" type="submit"><b>submit</b></button>
             </form>
@@ -564,36 +574,70 @@ box-shadow:         3px 3px 5px 6px rgb(8, 8, 6); margin-left: 50px;" class="col
     <script src="https://kit.fontawesome.com/4c52434f8c.js" crossorigin="anonymous"></script>
     <script src="https://kit.fontawesome.com/4c52434f8c.js" crossorigin="anonymous"></script>
    
-    <script>
-        $("#submit-form").submit((e)=>{
-            e.preventDefault()
-            $.ajax({
-                url:"https://script.google.com/macros/s/AKfycbyLoWzsprBJXIRQUcmXMZ3Rzdp5xpgxG_eDidFP6A/exec",
-                data:$("#submit-form").serialize(),
-                method:"post",
-                success:function (response){
-                    alert("Form submitted successfully")
-                    window.location.reload()
-                    //window.location.href="https://google.com"
-                },
-                error:function (err){
-                    alert("Something Error")
     
-                }
-            })
-        })
-    </script>
+
+
+
 
 <!-- <script
 src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
 integrity="sha256-pasqAKBDmFT4eHoN2ndd6lN370kFiGUFyTiUHWhU7k8="
 crossorigin="anonymous"></script> -->
 
-
+<script src="https://cdn.jsdelivr.net/npm/jquery-validation@1.19.2/dist/jquery.validate.js"></script>
 <script
   src="https://code.jquery.com/jquery-3.4.1.min.js"
   integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
   crossorigin="anonymous"></script>
+
+<!-- 
+<script>
+    (function() {
+'use strict';
+window.addEventListener('load', function() {
+// Fetch all the forms we want to apply custom Bootstrap validation styles to
+var forms = document.getElementsByClassName('needs-validation');
+// Loop over them and prevent submission
+var validation = Array.prototype.filter.call(forms, function(form) {
+form.addEventListener('submit', function(event) {
+if (form.checkValidity() === false) {
+event.preventDefault();
+event.stopPropagation();
+}
+form.classList.add('was-validated');
+}, false);
+});
+}, false);
+})(); -->
+
+</script>
+<script src="https://code.jquery.com/jquery-3.5.1.js"
+    integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script>
+
+<!--    
+    <script>
+        // Example starter JavaScript for disabling form submissions if there are invalid fields
+        (function() {
+          'use strict';
+          window.addEventListener('load', function() {
+            // Fetch all the forms we want to apply custom Bootstrap validation styles to
+            var forms = document.getElementsByClassName('needs-validation');
+            // Loop over them and prevent submission
+            var validation = Array.prototype.filter.call(forms, function(form) {
+              form.addEventListener('submit', function(event) {
+                if (form.checkValidity() === false) {
+                  event.preventDefault();
+                  event.stopPropagation();
+                }
+                form.classList.add('was-validated');
+              }, false);
+            });
+          }, false);
+        })();
+        </script> -->
+
+<script src="int.js"></script>
 </body>
+
 
 </html>
